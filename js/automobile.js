@@ -11,7 +11,7 @@ var automobile = {
   },
 
   start: function() {
-    if(this.isIgnition) {
+    if (this.isIgnition) {
       console.log(this.color.slice(0,1).toUpperCase() + this.color.slice(1).toLowerCase()  + " car " + this.brand +" has run!");
     } else {
       console.log("Turn on ignition first!");
@@ -19,7 +19,7 @@ var automobile = {
   },
 
   stop: function() {
-    if(this.isIgnition) {
+    if (this.isIgnition) {
       this.isIgnition = false;
       console.log("Car has stopped");
     } else {
@@ -27,7 +27,7 @@ var automobile = {
     }
   },
   isPetrol: function() {
-    if(this.amountPetrol > 0){ 
+    if (this.amountPetrol > 0){ 
       this.ignition(); 
     } else {
       console.log("Petrol tank is empty");

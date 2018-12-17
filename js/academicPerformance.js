@@ -4,10 +4,12 @@ var academicPerformance = {
   stepan : 1,
   elena : 99
 };
-var name;
-var theBestAcademicPerfomance;
+
+showTheBestAcademicPerfomance(academicPerformance);
+
 function showTheBestAcademicPerfomance(obj) {
-  theBestAcademicPerfomance = -Infinity;
+  var studentName;
+  var theBestAcademicPerfomance= -Infinity;
   for (var key in obj) {
     if (obj[key] > theBestAcademicPerfomance) {
       theBestAcademicPerfomance = obj[key];
@@ -16,5 +18,3 @@ function showTheBestAcademicPerfomance(obj) {
   }
   console.log("Student with the best academic performance " + studentName.slice(0,1).toUpperCase() + studentName.slice(1).toLowerCase()  + " : " + theBestAcademicPerfomance);
 }
-
-showTheBestAcademicPerfomance(academicPerformance);

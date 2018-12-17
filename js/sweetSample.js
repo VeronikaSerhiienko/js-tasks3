@@ -1,14 +1,13 @@
 var sweetSample = [43, 23, 57, 54, 60, 41, 10, 60, 23, 47, 60, 12, 59];
 var maxResult;
-var samplesWithTheBestResult = [];
 
 showMessageAboutEachResult(sweetSample);
 showSamplesWithTheBestResult(sweetSample, maxResult);
 
 function showMessageAboutEachResult(array) {
-  maxResult = sweetSample[0];
+  var maxResult = sweetSample[0];
   for (var i = 0; i < array.length; i++) {
-    console.log("sample " + (i+1) + " - result " + array[i]);
+    console.log("sample " + (i + 1) + " - result " + array[i]);
     if (array[i] > maxResult) {
       maxResult = array[i];
     }
@@ -18,9 +17,10 @@ function showMessageAboutEachResult(array) {
 }
 
 function showSamplesWithTheBestResult(array, elem) {
+  var samplesWithTheBestResult = [];
   for (var i = 0; i < array.length; i++) {
     if (array[i] === elem) { 
-      samplesWithTheBestResult.push(i+1);
+      samplesWithTheBestResult.push(i + 1);
     }
   }
   console.log("Samples with the best result are on places " + samplesWithTheBestResult);
