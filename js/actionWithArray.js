@@ -1,6 +1,6 @@
 var testArray = [43, 23, 57, 54, 60, 41, 10, 60, 23, 47, 60, 12, 59];
 var shuffledArray = shuffleElem(testArray);
-var testArray2 =[1, 2, 3, 4];
+var testArray2 = [1, 2, 3, 4];
 var allSubArrays = getSubArrays(testArray2);
 var testArray3 = [1, -2, 3, 4, -9, 6];
 

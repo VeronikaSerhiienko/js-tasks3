@@ -5,7 +5,7 @@ showMessageAboutEachResult(sweetSample);
 showSamplesWithTheBestResult(sweetSample, maxResult);
 
 function showMessageAboutEachResult(array) {
-  var maxResult = sweetSample[0];
+  maxResult = sweetSample[0];
   for (var i = 0; i < array.length; i++) {
     console.log("sample " + (i + 1) + " - result " + array[i]);
     if (array[i] > maxResult) {

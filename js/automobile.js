@@ -26,8 +26,9 @@ var automobile = {
       console.log("Ignition was turned off");
     }
   },
+  
   isPetrol: function() {
-    if (this.amountPetrol > 0){ 
+    if (this.amountPetrol > 0) { 
       this.ignition(); 
     } else {
       console.log("Petrol tank is empty");
